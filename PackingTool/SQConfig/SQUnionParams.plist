@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SQGameUrl</key>
+	<string>http://h5.112wan.com/game/473.html</string>
+	<key>SQAppKey</key>
+	<string>HGe63iPLDhhVRbthpFOSVUJKcG8Jj3</string>
+	<key>SQGamePackageID</key>
+	<integer>473</integer>
+	<key>TalkingDataAppID</key>
+	<string>B677752AB35443FF883F9E99BF140444</string>
+	<key>TalkingDataChannelID</key>
+	<string>AppStore</string>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+JS调用IOSBox 各接口及参数说明：
+
+一、概述
+   所有接口统一用 H5GameMutually(action, obj)
+   其中action 为string, obj 为 json对象。
+	新增适配iOS8的WKWebView,调用以下系统接口:
+	window.webkit.messageHandlers.H5GameMutually.postMessage({"action":action,"obj":obj});
+
+二、各接口说明及参数：
+	1. 页面加载完成通知接口
+		说明：加载完成后，由JS通知IOSBox或AndroidBox。
+		参数：
+		 	action = 'onload'
+		 	obj = { }
+
+	2. 注册通知接口
+		说明：用户注册后，由JS通知IOSBox。
+		参数：
+		 	action = 'register'
+		 	obj = {
+		 		account:'aaaa'
+		 	}
+
+	3.登录通知接口
+		说明：用户登录后，由JS通知IOSBox。
+		参数：
+			action='login'
+			obj = {
+		 		account:'aaaa'
+		 	}
+
+	4.充值通知接口
+		说明：用户登录后，由JS通知IOSBox。
+		参数：
+			action='pay'
+			obj = {
+		 		order_id:'aaaa'
+		 		pay_amount:1.0
+		 	}
+	5.复制礼包码通知接口
+		说明：用户点击领取礼包后，由JS通知IOSBox和AndroidBox.
+		参数：
+			action='copy_code'
+			obj= {
+				code:'1111111111'		
+			}
+	6.苹果内购支付接口
+		说明：用户点击对应的商品购买后，由JS通知IOSBox.
+		参数：
+			action='iap_pay’
+			obj= {
+				order_id:'aaaa'
+    				product_id:’com.xxx.aaaa'		
+			}
+	7.传递平台客服qq接口
+		说明：sdk 初始化成功后，由JS通知IOSBox和AndroidBox.
+		参数：
+			action='qq'
+			obj={
+				platform_service_qq:'424234234'
+				qq:'4234242342'
+			}
